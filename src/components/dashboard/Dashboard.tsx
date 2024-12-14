@@ -1,9 +1,13 @@
-const Dashboard = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+import { ReactNode } from "react";
+import Navbar from "../layout/Navbar";
 
-export default Dashboard
+const Dashboard: React.FC<{ children: ReactNode }> = ({ children }) => {
+  return (
+    <>
+      <Navbar />
+      {children}
+    </>
+  );
+};
+
+export default Dashboard;
