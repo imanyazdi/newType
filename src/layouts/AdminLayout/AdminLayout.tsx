@@ -18,7 +18,9 @@ const AdminLayout: FC<AdminLayoutProps> = ({ children }) => {
           flexGrow: 1,
           p: 3,
           width: { sm: `calc(100% - 240px)` },
-          minHeight: '100vh'
+          minHeight: '100vh',
+          marginRight: '240px', 
+          marginLeft: 0 
         }}
       >
         <Toolbar /> 
