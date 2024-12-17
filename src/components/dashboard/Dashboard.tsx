@@ -1,16 +1,17 @@
-import { ReactNode } from "react";
-import { Box } from "@mui/material";
-import Navbar from "../layout/Navbar";
-import Sidebar from "../layout/Sidebar";
+import { Box, Typography, Grid } from "@mui/material";
 
-const Dashboard: React.FC<{ children: ReactNode }> = ({ children }) => {
+const Dashboard = () => {
   return (
-    <Box display="flex">
-      <Sidebar />
-      <Box>
-        <Navbar />
-        {children}
-      </Box>
+    <Box>
+      <Typography variant="h4" gutterBottom>
+        داشبورد
+      </Typography>
+      <Grid container spacing={3}>
+      
+        <Grid item xs={12} md={4}>
+         
+        </Grid>
+      </Grid>
     </Box>
   );
 };
