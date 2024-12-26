@@ -5,8 +5,8 @@ import { prefixer } from "stylis";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import AdminLayout from "./layouts/AdminLayout/AdminLayout";
-import Table from "./components/table/Table";
-import { DataType } from "./components/table/Table.types";  // Import type for data
+import Table from "./components/common/Input/table/Table";
+import { DataType } from "./components/common/Input/table/Table.types";  // Import type for data
 
 // Create RTL cache for styling
 const cacheRtl = createCache({
@@ -22,7 +22,6 @@ const theme = createTheme({
   },
 });
 
-// Sample data to be passed to Table component
 const data: DataType[] = [
   {
     name: "Ali",
